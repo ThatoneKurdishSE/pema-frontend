@@ -1,32 +1,29 @@
 import React, { useState }from 'react'
 import { Text, TextInput, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
 
-export default function LoginForm(props) {
+export default function LoginForm({setUser}) {
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.setUser({
-            username,
-            password
-        })
+        setUser({username})
     }
     return (
         <ScrollView style={StyleSheet.form}>
             <Image source={require('/Users/razsarwar/flatiron/capstone/pema-frontend/assets/pema-login.png')} style={styles.Image} />
-            <Text style={styles.Text}> P E M A</Text>
+            <Text style={styles.Text}>P E M A</Text>
             <TextInput
                 onChangeText={(text) => setUsername(text)}
                 style={styles.loginInput}
-                placeholder="   Username"
+                placeholder="Username"
                 value={username}
                 />
             <TextInput
                 onChangeText={(text) => setPassword(text)}
                 style={styles.loginInput}
-                placeholder="   Password"
+                placeholder="Password"
                 value={password}
                 secureTextEntry={true}
                 />
@@ -38,7 +35,7 @@ export default function LoginForm(props) {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => setUser({})}>
-                <Text>Return</Text>
+                    <Text>Return</Text>
                 </TouchableOpacity>
         </ScrollView>
     )
