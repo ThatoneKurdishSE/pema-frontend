@@ -28,14 +28,14 @@ export default function LoginForm({setUser}) {
                 secureTextEntry={true}
                 />
                 <TouchableOpacity
-                    style={styles.button}
+                    style={styles.loginButton}
                     onPress={handleSubmit}>
                 <Text>Log In</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                    style={styles.button}
+                    style={styles.signupButton}
                     onPress={() => setUser({})}>
-                    <Text>Return</Text>
+                    <Text>Sign-up</Text>
                 </TouchableOpacity>
         </ScrollView>
     )
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         width: 150
     },
-    button: {
+    loginButton: {
         marginLeft: 150,
         alignItems: 'center',
         backgroundColor: "#FFFFFF",
@@ -72,7 +72,18 @@ const styles = StyleSheet.create({
         borderRadius: 60,
         width: 130,
         marginTop: 160,
-        opacity: 0.5
+        opacity: 0.9
+    },
+    signupButton: {
+        color: 'red',
+        marginLeft: 150,
+        alignItems: 'center',
+        backgroundColor: "grey",
+        padding: 10,
+        borderRadius: 60,
+        width: 130,
+        marginTop: 160,
+        opacity: 0.5,
     },
     Image: {
         flex: 3,

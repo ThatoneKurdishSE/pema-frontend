@@ -7,7 +7,7 @@ export default function About(props) {
     return (
         <ScrollView>
             <View>
-            <Image source={require('../assets/aboutPic.jpeg')} style={styles.Image}/>
+            <Image source={require('../assets/aboutPic.png')} style={styles.Image}/>
                 <Text style={styles.TitleKu}>  دەربارەی پێما بە کوردی</Text>
                     <Text style={styles.TextKu}>
                     پێما بە زمانی سانسکریت مانای کوڵی لۆتەسی هەیە. بێگومان ئەمە یەنها دەربارەی کوڵەکە نیە و باس لەو شێوەیە دەکات کە کەسەکان هەیانە وەختێک مێدیتەیشن دەکەن.  ئەپڵیکەیشنی پێما بۆ هەموو ئەو کەسانە درووستکراوە کە دەیانەێت زیاتر لەسەر ڕاهێنانی مێدیتەیشن بزانن... جێی تێبینیە بۆ ئەو کەسانە کە بزانن، من وەکو بەرهەمهێنەری ئەم ئەپڵیکەیشنە شارازا نیم لە بواری مێدیتەیشن. تەنها خولیایەکە بۆ من  
@@ -20,7 +20,7 @@ export default function About(props) {
                     </Text>
             </View>
             <View>
-            <Text style={styles.TitleEn}>About pema: English</Text>
+            <Text style={styles.TitleEn}>About pema</Text>
                 <Text style={styles.TextEn}>From Wikipedia, the free encyclopedia. Pema (Tibetan: པད་མ, Wylie: pad ma) is a Tibetan name meaning "lotus", which originated as a loanword from Sanskrit padma. Pema's story was a beautiful unfolding of my journey and dare I say, my purpose. I have always believed that meditations are one of the best forms of mindfulness practices. This project does not in any way mean or imply that I am a mindfulness practitioner/professional. Enjoy!</Text>
             </View>
         </ScrollView>    
@@ -48,9 +48,9 @@ const styles = StyleSheet.create({
         opacity: 0.5
     },
     Image: {
-        width: 500,
-        height: 1000,
-        opacity: 0.8,
+        width: 450,
+        height: 900,
+        opacity: 0.5,
     },
     TitleKu: {
         marginBottom: 10,
