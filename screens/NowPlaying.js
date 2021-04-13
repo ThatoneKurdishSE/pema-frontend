@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react'
 import { StyleSheet, View, Text } from 'react-native'
-import { Audio } from 'expo-av';
+//import { Audio } from 'expo-av';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function nowPlaying() {
